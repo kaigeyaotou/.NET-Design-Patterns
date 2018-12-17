@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\netstandard2.0\Lunz.ProductCenter.MService.QueryStack.MySql.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="1.50.4" />
+    <PackageReference Include="Lunz.Data.NetStandard" Version="1.0.0" />
+    <PackageReference Include="Lunz.StyleCop.Analyzers" Version="1.0.0-preview5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Lunz.ProductCenter.Core\Lunz.ProductCenter.Core.csproj" />
+    <ProjectReference Include="..\Lunz.ProductCenter.Data\Lunz.ProductCenter.Data.csproj" />
+    <ProjectReference Include="..\Lunz.ProductCenter.MService.QueryStack\Lunz.ProductCenter.MService.QueryStack.csproj" />
+  </ItemGroup>
+
+</Project>

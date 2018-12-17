@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\netstandard2.0\Lunz.ProductCenter.Common.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="UrlExtensions.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="7.6.0-preview1" />
+    <PackageReference Include="Lunz.Data.Extensions.Sql" Version="1.0.0.3" />
+    <PackageReference Include="Lunz.StyleCop.Analyzers" Version="1.0.0-preview5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Lunz.ProductCenter.MService.QueryStack\Lunz.ProductCenter.MService.QueryStack.csproj" />
+  </ItemGroup>
+
+</Project>
